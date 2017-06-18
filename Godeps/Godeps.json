@@ -1,0 +1,57 @@
+{
+	"ImportPath": "github.com/nakaji-s/hbase-cmd",
+	"GoVersion": "go1.8",
+	"GodepVersion": "v79",
+	"Deps": [
+		{
+			"ImportPath": "github.com/Sirupsen/logrus",
+			"Comment": "v1.0.0-1-g85b1699",
+			"Rev": "85b1699d505667d13f8ac4478c1debbf85d6c5de"
+		},
+		{
+			"ImportPath": "github.com/cznic/b",
+			"Rev": "6955404bf550e1eae1bf83121739078b027f4547"
+		},
+		{
+			"ImportPath": "github.com/golang/protobuf/proto",
+			"Rev": "5a0f697c9ed9d68fef0116532c6e05cfeae00e55"
+		},
+		{
+			"ImportPath": "github.com/nakaji-s/gohbase",
+			"Rev": "9e8a5fcbf07382de20078d449fa2b587509db5ab"
+		},
+		{
+			"ImportPath": "github.com/nakaji-s/gohbase/filter",
+			"Rev": "9e8a5fcbf07382de20078d449fa2b587509db5ab"
+		},
+		{
+			"ImportPath": "github.com/nakaji-s/gohbase/hrpc",
+			"Rev": "9e8a5fcbf07382de20078d449fa2b587509db5ab"
+		},
+		{
+			"ImportPath": "github.com/nakaji-s/gohbase/pb",
+			"Rev": "9e8a5fcbf07382de20078d449fa2b587509db5ab"
+		},
+		{
+			"ImportPath": "github.com/nakaji-s/gohbase/region",
+			"Rev": "9e8a5fcbf07382de20078d449fa2b587509db5ab"
+		},
+		{
+			"ImportPath": "github.com/nakaji-s/gohbase/zk",
+			"Rev": "9e8a5fcbf07382de20078d449fa2b587509db5ab"
+		},
+		{
+			"ImportPath": "github.com/samuel/go-zookeeper/zk",
+			"Rev": "1d7be4effb13d2d908342d349d71a284a7542693"
+		},
+		{
+			"ImportPath": "golang.org/x/sys/unix",
+			"Rev": "fb4cac33e3196ff7f507ab9b2d2a44b0142f5b5a"
+		},
+		{
+			"ImportPath": "gopkg.in/urfave/cli.v1",
+			"Comment": "v1.19.1",
+			"Rev": "0bdeddeeb0f650497d603c4ad7b20cfe685682f6"
+		}
+	]
+}
