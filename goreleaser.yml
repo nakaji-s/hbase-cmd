@@ -1,0 +1,14 @@
+# goreleaser.yml
+# Build customization
+build:
+  main: main.go
+  binary: hbase-cmd
+  goos:
+    - windows
+    - darwin
+    - linux
+  goarch:
+    - amd64
+# Archive customization
+archive:
+  format: tar.gz
