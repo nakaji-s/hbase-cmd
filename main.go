@@ -244,6 +244,8 @@ func scan(c *cli.Context) error {
 		result, err := scanRsp.Next()
 		if err == io.EOF {
 			break
+		} else if err != nil {
+			return err
 		}
 
 		for _, cell := range result.Cells {
