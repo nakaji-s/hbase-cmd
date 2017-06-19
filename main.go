@@ -59,7 +59,7 @@ OPTIONS:
 			Category: "template",
 			Action:   create,
 			Flags: []cli.Flag{
-				cli.StringFlag{Name: "cf", Value: "cf", Usage: "columnFamilies exmaple=cf1,cf2"},
+				cli.StringFlag{Name: "cf, f", Value: "cf", Usage: "columnFamilies exmaple=cf1,cf2"},
 			},
 		},
 		{
@@ -72,10 +72,10 @@ OPTIONS:
 			Category: "template",
 			Action:   put,
 			Flags: []cli.Flag{
-				cli.StringFlag{Name: "cf", Value: "cf", Usage: "columnFamily"},
-				cli.StringFlag{Name: "cq", Value: "cq", Usage: "columnQualifier"},
-				cli.StringFlag{Name: "key"},
-				cli.StringFlag{Name: "value"},
+				cli.StringFlag{Name: "cf, f", Value: "cf", Usage: "columnFamily"},
+				cli.StringFlag{Name: "cq, q", Value: "cq", Usage: "columnQualifier"},
+				cli.StringFlag{Name: "key, k"},
+				cli.StringFlag{Name: "value, v"},
 			},
 		},
 		{
@@ -83,7 +83,7 @@ OPTIONS:
 			Category: "template",
 			Action:   delete,
 			Flags: []cli.Flag{
-				cli.StringFlag{Name: "key"},
+				cli.StringFlag{Name: "key, k"},
 			},
 		},
 		{
@@ -91,8 +91,8 @@ OPTIONS:
 			Category: "template",
 			Action:   get,
 			Flags: []cli.Flag{
-				cli.StringFlag{Name: "key"},
-				cli.StringFlag{Name: "format", Value: "key,cfcq,value",
+				cli.StringFlag{Name: "key, k"},
+				cli.StringFlag{Name: "format, f", Value: "key,cfcq,value",
 					Usage: "key(rowkey), cfcq(columnFamily:columnQualifier), value(value), em(epoc milli), ts(timestamp)"},
 			},
 		},
@@ -101,17 +101,17 @@ OPTIONS:
 			Category: "template",
 			Action:   scan,
 			Flags: []cli.Flag{
-				cli.StringFlag{Name: "prefix", Value: "", Usage: "prefixFilter"},
-				cli.StringFlag{Name: "format", Value: "key,cfcq,value",
+				cli.StringFlag{Name: "prefix, p", Value: "", Usage: "prefixFilter"},
+				cli.StringFlag{Name: "format, f", Value: "key,cfcq,value",
 					Usage: "key(rowkey), cfcq(columnFamily:columnQualifier), value(value), em(epoc milli), ts(timestamp)"},
 			},
 		},
 	}
 	app.Flags = []cli.Flag{
-		cli.StringFlag{Name: "zookeeper-quorum", Value: "localhost"},
-		cli.StringFlag{Name: "hbase-node", Value: "/hbase-unsecure", Usage: "node path stored in zookeeper"},
-		cli.StringFlag{Name: "table", Value: "system:dummyTable", Usage: "namespace:tableName"},
-		cli.StringFlag{Name: "log", Value: "warn", Usage: "log level for stdout debug/info/warn/error/fatal"},
+		cli.StringFlag{Name: "zookeeper-quorum, z", Value: "localhost"},
+		cli.StringFlag{Name: "hbase-node, n", Value: "/hbase-unsecure", Usage: "node path stored in zookeeper"},
+		cli.StringFlag{Name: "table, t", Value: "system:dummyTable", Usage: "namespace:tableName"},
+		cli.StringFlag{Name: "log, l", Value: "warn", Usage: "log level for stdout debug/info/warn/error/fatal"},
 	}
 	app.EnableBashCompletion = true
 
